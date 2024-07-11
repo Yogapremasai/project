@@ -1,0 +1,62 @@
+.container{
+            
+    background-color: rgb(29, 29, 86);
+    padding: 20px;
+}
+.item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   color: white;
+    
+    
+}
+h1{
+    color: white;
+}
+.icon{
+    position:relative;
+    padding-left: 15cm;
+    display: flex;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+    
+}
+.ctn{
+    position: relative;
+    display: flex;
+   color: rgb(7, 2, 2);
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   align-content: space-around;
+    
+}
+.bot{
+   margin-top: 30px;
+    padding: 13px;
+    background-color: burlywood;
+    width: 100px;
+    text-align: center;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    gap: 150px;
+    padding: 80px;
+    background-color: rgba(129, 84, 84, 0.652);
+    margin-top: 50px;
+}
+.cnt{
+    background-color: rgba(91, 232, 91, 0.742);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;    
+}
+.last{
+    background-color: black;
+    
+}

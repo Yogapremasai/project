@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi - Online Shopping</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #add8e6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+            padding: 10px;
+            background-color: rgba(255, 166, 0, 0.619);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #000;
+        
+        }
+
+        input, textarea, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .delivery-options {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .delivery-options input {
+            margin-right: 5px;
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .terms input {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b4513;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+            color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Welcome to Adi - Online Shopping</h1>
+    <div class="container">
+        
+        <form action="#" method="post">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter Customer Name">
+            
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" 
+            placeholder="Enter your mobile no">
+            
+            <label for="emailId">Email ID</label>
+            <input type="email" id="emailId" name="emailId" placeholder="Enter Your Email">
+            
+            <label for="billingAddress">Billing Address</label>
+            <textarea id="billingAddress" name="billingAddress" placeholder="Enter Your Address"></textarea>
+            
+            <label for="product">Choose Product</label>
+            <select id="product" name="product">
+                <option value="tv">TV</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <label for="quantity">Enter Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity">
+            
+            <label for="paymentMode">Payment Mode</label>
+            <select id="paymentMode" name="paymentMode">
+                <option value="cod">Cash On Delivery</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <label for="bagTotal">Bag Total</label>
+            <input type="text" id="bagTotal" name="bagTotal">
+            
+            <label for="couponCode">Coupon Code</label>
+            <input type="text" id="couponCode" name="couponCode">
+            
+            <label for="deliveryOptions">Delivery Options</label>
+            <div class="delivery-options">
+                <input type="radio" id="express" name="deliveryOptions" value="express">
+                <label for="express">Express</label>
+                <input type="radio" id="standard" name="deliveryOptions" value="standard" checked>
+                <label for="standard">Standard</label>
+            </div>
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I Agree to the Terms & Conditions</label>
+            </div>
+            
+            <button type="button" onclick="calculateAmount()">Chk. Amount Payable</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+    <script>
+        function calculateAmount() {
+            // Function to calculate amount payable
+            alert('Calculating amount payable...');
+        }
+    </script>
+</body>
+</html>
